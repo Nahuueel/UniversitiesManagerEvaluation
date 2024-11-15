@@ -3,9 +3,78 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{48F0994A-682F-4B72-AD56-89BED0D3E2BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Library", "2. Library", "{5639BFBB-5F19-4C8C-A146-9555AC7913FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain", "3. Domain", "{58F78FA2-2930-44D1-87DE-8DCDBE834205}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure", "4. Infrastructure", "{F098F638-ED38-47C1-ACFA-D015F3F3AD0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. XCutting", "5. XCutting", "{D659FC5D-17A7-4AF8-B64E-3476E6B4C11D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. UnitTesting", "6. UnitTesting", "{A167CC90-AC71-47CA-BDBA-80BEC4ED8D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitiesManagerEvaluation.Presentation.DistributedServices", "UniversitiesManagerEvaluation.Presentation.DistributedServices\UniversitiesManagerEvaluation.Presentation.DistributedServices.csproj", "{39D80D68-19B1-4E07-8052-29FE3172C7E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitiesManagerEvaluation.Library.Contracts", "UniversitiesManagerEvaluation.Library.Contracts\UniversitiesManagerEvaluation.Library.Contracts.csproj", "{B7EB92CD-3120-407E-B6AD-9AF9C22424C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitiesManagerEvaluation.Library.Impl", "UniversitiesManagerEvaluation.Library.Impl\UniversitiesManagerEvaluation.Library.Impl.csproj", "{10AE5FE2-D94F-413A-9F4A-5D6E524AD44F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitiesManagerEvaluation.Domain.Models", "UniversitiesManagerEvaluation.Domain.Models\UniversitiesManagerEvaluation.Domain.Models.csproj", "{8E20DB27-C560-4247-AA07-00F8C47DC1F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitiesManagerEvaluation.Infrastructure.Contracts", "UniversitiesManagerEvaluation.Infrastructure.Contracts\UniversitiesManagerEvaluation.Infrastructure.Contracts.csproj", "{F0DB44A6-CDD8-4362-8CEF-D69082A57E61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitiesManagerEvaluation.Infrastructure.Impl", "UniversitiesManagerEvaluation.Infrastructure.Impl\UniversitiesManagerEvaluation.Infrastructure.Impl.csproj", "{523F31FF-5DCB-4543-9B1D-F76008127271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversitiesManagerEvaluations.XCutting.Enums", "UniversitiesManagerEvaluations.XCutting.Enums\UniversitiesManagerEvaluations.XCutting.Enums.csproj", "{8319CC0C-5208-46A6-92F1-4E6435C26FA0}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39D80D68-19B1-4E07-8052-29FE3172C7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D80D68-19B1-4E07-8052-29FE3172C7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D80D68-19B1-4E07-8052-29FE3172C7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D80D68-19B1-4E07-8052-29FE3172C7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7EB92CD-3120-407E-B6AD-9AF9C22424C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7EB92CD-3120-407E-B6AD-9AF9C22424C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7EB92CD-3120-407E-B6AD-9AF9C22424C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7EB92CD-3120-407E-B6AD-9AF9C22424C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10AE5FE2-D94F-413A-9F4A-5D6E524AD44F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10AE5FE2-D94F-413A-9F4A-5D6E524AD44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10AE5FE2-D94F-413A-9F4A-5D6E524AD44F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10AE5FE2-D94F-413A-9F4A-5D6E524AD44F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E20DB27-C560-4247-AA07-00F8C47DC1F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E20DB27-C560-4247-AA07-00F8C47DC1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E20DB27-C560-4247-AA07-00F8C47DC1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E20DB27-C560-4247-AA07-00F8C47DC1F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0DB44A6-CDD8-4362-8CEF-D69082A57E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DB44A6-CDD8-4362-8CEF-D69082A57E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DB44A6-CDD8-4362-8CEF-D69082A57E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DB44A6-CDD8-4362-8CEF-D69082A57E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523F31FF-5DCB-4543-9B1D-F76008127271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523F31FF-5DCB-4543-9B1D-F76008127271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523F31FF-5DCB-4543-9B1D-F76008127271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523F31FF-5DCB-4543-9B1D-F76008127271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8319CC0C-5208-46A6-92F1-4E6435C26FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8319CC0C-5208-46A6-92F1-4E6435C26FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8319CC0C-5208-46A6-92F1-4E6435C26FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8319CC0C-5208-46A6-92F1-4E6435C26FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39D80D68-19B1-4E07-8052-29FE3172C7E7} = {48F0994A-682F-4B72-AD56-89BED0D3E2BF}
+		{B7EB92CD-3120-407E-B6AD-9AF9C22424C7} = {5639BFBB-5F19-4C8C-A146-9555AC7913FA}
+		{10AE5FE2-D94F-413A-9F4A-5D6E524AD44F} = {5639BFBB-5F19-4C8C-A146-9555AC7913FA}
+		{8E20DB27-C560-4247-AA07-00F8C47DC1F8} = {58F78FA2-2930-44D1-87DE-8DCDBE834205}
+		{F0DB44A6-CDD8-4362-8CEF-D69082A57E61} = {F098F638-ED38-47C1-ACFA-D015F3F3AD0C}
+		{523F31FF-5DCB-4543-9B1D-F76008127271} = {F098F638-ED38-47C1-ACFA-D015F3F3AD0C}
+		{8319CC0C-5208-46A6-92F1-4E6435C26FA0} = {D659FC5D-17A7-4AF8-B64E-3476E6B4C11D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88500F1A-59F5-4060-93E3-3959ECCA223F}
